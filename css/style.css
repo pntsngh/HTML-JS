@@ -1,0 +1,129 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+html {
+    font-family: Verdana;
+}
+body {
+    background-color: #755503;
+    background-size: cover;
+}
+header {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    text-align: right;
+    font-size: 2rem;
+}
+h1 {
+    text-align: right;
+    overflow: hidden;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    background-color: goldenrod;
+    padding: 0;
+    margin: 0;
+}
+li a {
+    background-color: goldenrod;
+    color: black;
+    width: 100%;
+    height: 3rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Bernard MT Condensed";
+    margin: 0;
+    padding: 0.5rem;
+}
+li a:hover {
+    background-color: #daa564;
+}
+main {
+    width: 80%;
+    background-color: gold;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+section {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+.product h2 {
+    width: 100%;
+    text-align: center;
+}
+.home {
+    width: 100%;
+    text-align: center;
+}
+.home img {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+.product {
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    width: calc(100% / 3.0299);
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: auto;
+}
+article p {
+    text-align: center;
+}
+article h3 {
+    text-align: center;
+}
+article figure {
+    float: top;
+    margin: 0 1rem 1rem 0;
+    border: 1px black solid;
+    border-radius: 8px;
+}
+figcaption {
+    text-align: center;
+}
+article img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+}
+#contactpage {
+    width: 100%;
+    padding: 5rem 2rem 0 0;
+    display: flex;
+    overflow: hidden;
+}
+.contactinfo {
+    padding: 2rem;
+    width: 100%;
+}
+.mappic {
+    float: right;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
