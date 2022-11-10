@@ -1,3 +1,5 @@
+'use strict';
+
 let x,y,z;
 x = prompt('Syötä kokonaisluku:');
 y = prompt('Syötä toinen kokonaisluku:');
