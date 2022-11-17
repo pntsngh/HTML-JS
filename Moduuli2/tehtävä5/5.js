@@ -1,6 +1,6 @@
 'use strict';
 
-let lista = []
+let lista = [];
 let nro = parseInt(prompt('anna numero'));
 
 while (true) {
@@ -10,5 +10,5 @@ while (true) {
         break;
     }
 }
-lista.sort()
-console.log(lista)
+lista.sort();
+console.log(lista);

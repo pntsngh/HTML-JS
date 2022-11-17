@@ -93,3 +93,20 @@ const picArray = [
 ];
 
 // add your code here
+
+for (let pic of picArray){
+  const article = document.createElement('article');
+  article.innerText = pic.title;
+  const figure = document.createElement('figure');
+  const i = document.createElement('img');
+  figure.appendChild(i);
+  i.src = pic.image.medium;
+  const fc = document.createElement('figcaption');
+  figure.appendChild(fc);
+  fc.innerText = pic.caption;
+  article.appendChild(figure);
+  const p = document.createElement('p');
+  p.innerText = pic.description;
+  article.appendChild(p);
+  document.querySelector('#pictures').appendChild(article);
+}
