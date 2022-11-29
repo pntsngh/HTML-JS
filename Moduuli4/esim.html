@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck-demo</title>
+</head>
+<body>
+<h1>Kolme päivän vitsiä</h1>
+<ol>
+  <li id="vitsi1">Eka vitsi</li>
+  <li id="vitsi2">Toka vitsi</li>
+  <li id="vitsi3">Kolmas vitsi</li>
+</ol>
+
+<script>
+    'use strict';
+    async function hae_vitsi(vitsinumero){
+    //https://api.chucknorris.io/jokes/random
+    const uri = 'https://api.chucknorris.io/jokes/random';
+    const response = await fetch(uri);
+    const json = await response.json();
+    const teksti = json['value'];
+    console.log(teksti);
+
+    //päivitä listaelementtiä
+    const haettava_id = 'vitsi' +vitsinumero.toString();
+    console.log(haettava_id);
+
+    const elementti = document.querySelector('#' + haettava_id);
+    elementti.innerHTML = teksti;
+  }
+
+  for (let i = 1; i <= 3; i++){
+    hae_vitsi(i)
+  }
+
+</script>
+
+</body>
+</html>
