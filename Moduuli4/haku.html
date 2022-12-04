@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <title>TV-haku</title>
     <script src="haku.js" defer></script>
+    <link href="haku.css" rel="stylesheet">
 </head>
 <body>
-<h1>TV-Haku</h1>
+<dialog id="dialog">
+   <span id="span">&#x2715;</span>
+    <iframe id="frame"></iframe>
+</dialog>
+<div class="container">
+    <header>
+        <h1>TV-Haku</h1>
+    </header>
 <form action="https://api.tvmaze.com/search/shows">
    <input id="query" name="q" type="text">
     <input type="submit" value="Search">
 </form>
+    <main>
+        <section id="series">
 
+        </section>
+    </main>
+    <footer></footer>
+</div>
 </body>
 </html>
